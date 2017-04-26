@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+
+    <wicket:extend>
+        <h3>Users</h3>
+
+
+        <table class="table table-striped">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>User Names</th>
+            <th>User Roles</th>
+
+            <tbody>
+                <tr wicket:id="user">
+                    <td wicket:id="firstname">Type</td>
+                    <td wicket:id="lastname">Type</td>
+                    <td wicket:id="username">Type</td>
+                    <td wicket:id="roles">Type</td>
+
+                    <td>
+                        <a class="btn btn-success" wicket:id="edit"><i></i>Edit</a>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+         <a class="btn btn-success" wicket:id="new"><i class="icon-plus"></i>AddNew</a>
+        
+        
+    </wicket:extend>
+</body>
+</html>

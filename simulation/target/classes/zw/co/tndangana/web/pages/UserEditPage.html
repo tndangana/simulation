@@ -1,0 +1,75 @@
+<html xmlns:wicket="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+    <wicket:extend>
+        <div class="container">
+            <div class="panel-body">
+                <div wicket:id="feedback"></div>
+
+
+                <!--        <h3>User</h3>-->
+                <form wicket:id="form">
+                    <table class="table">
+                        <tr><th><h1>User</h1></th></tr>
+                        <tr>
+                            <th>First Name</th>
+                            <td><input wicket:id="firstname" /></td>
+                        </tr>
+                        <tr>
+                            <th>Last Name</th>
+                            <td>
+                                <input wicket:id="lastname"/></td>
+
+                            <th>User Name</th>
+                            <td><input wicket:id="username" /></td>
+                        </tr>
+                        <tr>
+                            <th>password</th>
+                            <td><input wicket:id="password" /></td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td><input wicket:id="email" /></td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td><input wicket:id="address" /></td>
+                        </tr>
+                        <tr>
+                            <th>Date of birth</th>
+                            <td><input wicket:id="dob" /></td>
+                        </tr>
+                        <tr>
+                            <th>National id</th>
+                            <td><input wicket:id="national_id" /></td>
+                        </tr>
+                        <!--                        <tr>
+                                                    <th>Religion</th>
+                                                    <td>
+                                                        <select wicket:id="religion" ></select>
+                                                    </td>
+                                                </tr>-->
+                        <tr>
+                            <th>Phone Number</th>
+                            <td>
+                                <input wicket:id="phonenumber" />
+                            </td>
+                        </tr>
+                    </table>
+                    <div wicket:id="roles">
+                        <input type= "checkbox"/>
+                    </div>
+
+                    <input class="btn btn-success" wicket:id="submit" type="submit" value="Submit" />
+                    <a wicket:id="back" class="btn btn-danger">Back</a>
+                </form>
+            </div>
+        </div>
+    </wicket:extend>
+</body>
+</html>
+
+
